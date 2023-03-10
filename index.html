@@ -10,8 +10,14 @@
  
   <script src="../weather.min.js"></script>
 <script>
- var apiKey = "024b62bf6eb38ba0d0fa843d98b52250"; 
+   var apiKey = "024b62bf6eb38ba0d0fa843d98b52250"; 
         Weather.setApiKey( apiKey );
+  
+  var language = "pt-br"; 
+Weather.setLanguage( language );
+var tempLanguage = Weather.getLanguage();
+  
+
 
         Weather.getCurrent( "Rio de Janeiro", function ( current ) {
             document.querySelector( '#ourText' ).innerHTML = "<b>Temperature:</b> " + Math.round( current.temperature() ) + " &deg;K or " +
