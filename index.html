@@ -10,9 +10,7 @@
  
   <script src="../js/weather.min.js"></script>
     <script>
- <script src="../dist/weather.min.js"></script>
-    <script>
-        var apiKey = "024b62bf6eb38ba0d0fa843d98b52250"; 
+         var apiKey = "024b62bf6eb38ba0d0fa843d98b52250"; 
         Weather.setApiKey( apiKey );
 		var language = "pt"; // 
 Weather.setLanguage( language );
@@ -23,9 +21,6 @@ var tempLanguage = Weather.getLanguage();
                 Math.round( Weather.kelvinToCelsius( current.temperature() ) ) + " &deg;C" +
                 "<br /><b>Condições atuais do tempo:</b> " + current.conditions();
         } );
-
-       
-    </script>
- </script>
-</body>
+           </script>
+ </body>
 </html>
