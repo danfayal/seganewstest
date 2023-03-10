@@ -16,8 +16,8 @@
   var language = "pt-br"; 
 Weather.setLanguage( language );
 var tempLanguage = Weather.getLanguage();
-  
-        Weather.getCurrent( "Rio de Janeiro, BR", function ( current ) {
+  var cidadeID = '3451190';
+        Weather.getCurrent(cidadeID, function ( current ) {
             document.querySelector( '#ourText' ).innerHTML = "<b>Temperature:</b> " + Math.round( current.temperature() ) + " &deg;K or " +
                 Math.round( Weather.kelvinToFahrenheit( current.temperature() ) ) + " &deg;F ou, se vocês preferirem " +
                 Math.round( Weather.kelvinToCelsius( current.temperature() ) ) + " &deg;C" +
